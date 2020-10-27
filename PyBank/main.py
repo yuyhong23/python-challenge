@@ -1,7 +1,7 @@
 import os
 import csv
 
-financial_csv = os.path.join('..','Resources','budget_data.csv')
+financial_csv = os.path.join('Resources','budget_data.csv')
 
 month_count = 0
 net_total_profit = 0
