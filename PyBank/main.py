@@ -75,9 +75,22 @@ with open(financial_csv, 'r') as csvfile:
 
 # Print out the results
 print("Financial Analysis")
-print("------------------------------------------")
+print("----------------------------------------------------")
 print(f'Total Months: {month_count}')
 print(f'Total: ${net_total_profit:0,.0f}') # the :0,.0f is for converting the number to currency
 print(f'Average Change: ${total_average_change:0,.02f}') # the :0,.02f is for converting the number to currency with two decimal points
 print(f'Greatest Increase in Profits: {change_month[max_increase_profit_month]} (${max_increase_profit:0,.0f})')
 print(f'Greatest Decrease in Losses: {change_month[max_decrease_losses_month]} (${max_decrease_losses:0,.0f})')
+
+# Store the file path associated with the file
+file = 'analysis/analysis.txt'
+# Open the file in "write" mode and store the contents in the variable "text"
+with open(file, 'w') as text:
+    # Use writelines() function to put dara in a sequence and into the file
+    text.writelines(["Financial Analysis\n", 
+    "----------------------------------------------------\n",
+    f"Total Months: {month_count}\n",
+    f"Total: ${net_total_profit:0,.0f}\n",
+    f"Average Change: ${total_average_change:0,.02f}\n",
+    f"Greatest Increase in Profits: {change_month[max_increase_profit_month]} (${max_increase_profit:0,.0f}))\n",
+    f"Greatest Decrease in Losses: {change_month[max_decrease_losses_month]} (${max_decrease_losses:0,.0f}))\n"])
