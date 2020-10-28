@@ -77,7 +77,7 @@ with open(financial_csv, 'r') as csvfile:
 print("Financial Analysis")
 print("----------------------------------------------------")
 print(f'Total Months: {month_count}')
-print(f'Total: ${net_total_profit:0,.0f}') # the :0,.0f is for converting the number to currency
+print(f'Total: ${net_total_profit:0,.0f}') # the :0,.0f is for converting the number to currency (for easier read)
 print(f'Average Change: ${total_average_change:0,.02f}') # the :0,.02f is for converting the number to currency with two decimal points
 print(f'Greatest Increase in Profits: {change_month[max_increase_profit_month]} (${max_increase_profit:0,.0f})')
 print(f'Greatest Decrease in Losses: {change_month[max_decrease_losses_month]} (${max_decrease_losses:0,.0f})')
