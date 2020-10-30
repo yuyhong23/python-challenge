@@ -8,6 +8,12 @@ vote_count_csv = os.path.join('Resources','election_data.csv')
 # Declare the keys and their initial values
 voter_count = 0
 all_candidates = []
+candidate_count = 0
+# Found 4 unique candidates from running print(unqiue(all_candidates)) below
+candidate1 = 0
+candidate2 = 0
+candidate3 = 0
+candidate4 = 0
 
 # Function for getting each candidate's name without repeating
 def unique(candidate_list):
@@ -38,9 +44,22 @@ with open(vote_count_csv, 'r') as csvfile:
         # Assign the candidate list to all_candidates
         all_candidates.append(row[2])
 
+# Use the unique function to get a list of candidates 
+unique_list = unique(all_candidates)
+
+# Get the count each candidate received
+candidate1 = all_candidates.count(unique_list[0])
+candidate2 = all_candidates.count(unique_list[1])
+candidate3 = all_candidates.count(unique_list[2])
+candidate4 = all_candidates.count(unique_list[3])
 
 print("Election Results")
 print("--------------------------------")
 print(f'Total Votes: {voter_count:0,.0f}')# the :0,.0f is for converting the number to a easier read
 print("--------------------------------")
-print(unique(all_candidates))
+# Ran this to see how many unqiue candidates in the data: print(unique(all_candidates))
+print(unique_list[0])
+print(f'{candidate1}')
+print(f'{candidate2}')
+print(f'{candidate3}')
+print(f'{candidate4}')
