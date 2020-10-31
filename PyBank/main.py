@@ -13,9 +13,9 @@ change = []
 change_month = []
 total_average_change = 0
 average_change_month_count = 0
-max_increase_profit = -99999999
+max_increase_profit = -99999999 # Declare as such instead of 0 in case of no profits
 max_increase_profit_month = " "
-max_decrease_losses = 99999999
+max_decrease_losses = 99999999 # Declare as such instead of 0 in case of no losses
 max_decrease_losses_month = " "
 
 # Read in the csv file
@@ -77,8 +77,8 @@ with open(financial_csv, 'r') as csvfile:
 print("Financial Analysis")
 print("----------------------------------------------------")
 print(f'Total Months: {month_count}')
-print(f'Total: ${net_total_profit:0,.0f}') # the :0,.0f is for converting the number to currency (for easier read)
-print(f'Average Change: ${total_average_change:0,.02f}') # the :0,.02f is for converting the number to currency with two decimal points
+print(f'Total: ${net_total_profit:0,.0f}') # the :0,.0f is for converting the number for easier read
+print(f'Average Change: ${total_average_change:0,.02f}') # the :0,.02f is for converting the number to number with two decimal points
 print(f'Greatest Increase in Profits: {change_month[max_increase_profit_month]} (${max_increase_profit:0,.0f})')
 print(f'Greatest Decrease in Losses: {change_month[max_decrease_losses_month]} (${max_decrease_losses:0,.0f})')
 
@@ -86,7 +86,7 @@ print(f'Greatest Decrease in Losses: {change_month[max_decrease_losses_month]} (
 file = 'analysis/analysis.txt'
 # Open the file in "write" mode and store the contents in the variable "text"
 with open(file, 'w') as text:
-    # Use writelines() function to put dara in a sequence and into the file
+    # Use writelines() function to put data in a sequence and into the file
     text.writelines(["Financial Analysis\n", 
     "----------------------------------------------------\n",
     f"Total Months: {month_count}\n",
