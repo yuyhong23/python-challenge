@@ -80,3 +80,20 @@ print("--------------------------------")
 # Get the winner name based on the highest vote count
 print(f'Winner: {list(candidateNcount.keys())[list(candidateNcount.values()).index(winner_count)]}')
 print("--------------------------------")
+
+# Store the file path associated with the file
+file = 'analysis/election_results.txt'
+# Open the file in "write" mode and store the contents in the variable "text"
+with open(file, 'w') as text:
+    # Use writelines() function to put data in a sequence and into the file
+    text.writelines(["Election Results\n", 
+    "--------------------------------\n",
+    f"Total Votes: {voter_count:0,.0f}\n",
+    "--------------------------------\n",
+    f"{unique_list[0]}: {(candidate1/voter_count) * 100:0,.03f}% ({candidate1:0,.0f})\n",
+    f"{unique_list[1]}: {(candidate2/voter_count) * 100:0,.03f}% ({candidate2:0,.0f})\n",
+    f"{unique_list[2]}: {(candidate3/voter_count) * 100:0,.03f}% ({candidate3:0,.0f})\n",
+    f"{unique_list[3]}: {(candidate4/voter_count) * 100:0,.03f}% ({candidate4:0,.0f})\n",
+    "--------------------------------\n",
+    f"Winner: {list(candidateNcount.keys())[list(candidateNcount.values()).index(winner_count)]}\n",
+    "--------------------------------\n"])
