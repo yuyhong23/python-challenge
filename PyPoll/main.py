@@ -15,6 +15,7 @@ candidate1 = 0
 candidate2 = 0
 candidate3 = 0
 candidate4 = 0
+# Declaring a dictionary for finding the winner with the most count
 candidateNcount= {}
 winner_count = 0
 
@@ -23,7 +24,7 @@ def unique(candidate_list):
     # Create a list for storing the unique candidate names
     unique_list = []
 
-    # Read through the candidate list, if candidate name is not already in the list, add it
+    # Read through the candidate list, if candidate name is not already in the list, add it to unique_list
     for candidates in candidate_list:
         if candidates not in unique_list:
             unique_list.append(candidates)
@@ -44,31 +45,31 @@ with open(vote_count_csv, 'r') as csvfile:
     for row in csvreader:
         # Add 1 after each voter
         voter_count += 1
-        # Assign the candidate list to all_candidates
+        # Assign the candidates to all_candidates list
         all_candidates.append(row[2])
 
 # Use the unique function to get a list of candidates 
 unique_list = unique(all_candidates)
 
-# Get the count each candidate received
+# Get the count each candidate received using count function
 candidate1 = all_candidates.count(unique_list[0])
 candidate2 = all_candidates.count(unique_list[1])
 candidate3 = all_candidates.count(unique_list[2])
 candidate4 = all_candidates.count(unique_list[3])
 
-# Put the candidate name and the according vote count into a list for identifying the most vote
+# Put the candidate name and the according vote count into a dictionary for identifying the most vote
 candidateNcount = {unique_list[0]: candidate1,
         unique_list[1]: candidate2,
         unique_list[2]: candidate3,
         unique_list[3]: candidate4}
 
-# Identifying the most vote
+# Identifying the most vote using max function
 winner_count = max(candidateNcount.values())
 
 # Printing the results
 print("Election Results")
 print("--------------------------------")
-print(f'Total Votes: {voter_count:0,.0f}')# the :0,.0f is for converting the number to a easier read format
+print(f'Total Votes: {voter_count:0,.0f}')# the :0,.0f is for converting the number for easier read
 print("--------------------------------")
 # Ran this to see how many unqiue candidates in the data
     # print(unique(all_candidates))
