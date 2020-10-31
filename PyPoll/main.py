@@ -10,6 +10,7 @@ voter_count = 0
 all_candidates = []
 candidate_count = 0
 # Found 4 unique candidates from running print(unqiue(all_candidates)) below
+# For holding candidate's vote count
 candidate1 = 0
 candidate2 = 0
 candidate3 = 0
@@ -48,18 +49,20 @@ with open(vote_count_csv, 'r') as csvfile:
 unique_list = unique(all_candidates)
 
 # Get the count each candidate received
-candidate1 = (all_candidates.count(unique_list[0])/voter_count) * 100
-candidate2 = (all_candidates.count(unique_list[1])/voter_count) * 100
-candidate3 = (all_candidates.count(unique_list[2])/voter_count) * 100
-candidate4 = (all_candidates.count(unique_list[3])/voter_count) * 100
+candidate1 = all_candidates.count(unique_list[0])
+candidate2 = all_candidates.count(unique_list[1])
+candidate3 = all_candidates.count(unique_list[2])
+candidate4 = all_candidates.count(unique_list[3])
 
+# Printing the results
 print("Election Results")
 print("--------------------------------")
 print(f'Total Votes: {voter_count:0,.0f}')# the :0,.0f is for converting the number to a easier read
 print("--------------------------------")
-# Ran this to see how many unqiue candidates in the data: print(unique(all_candidates))
-print(unique_list[0])
-print(f'{candidate1}')
-print(f'{candidate2}')
-print(f'{candidate3}')
-print(f'{candidate4}')
+# Ran this to see how many unqiue candidates in the data
+    # print(unique(all_candidates))
+print(f'{unique_list[0]}: {(candidate1/voter_count) * 100:0,.03f}% ({candidate1:0,.0f})')
+print(f'{unique_list[1]}: {(candidate2/voter_count) * 100:0,.03f}% ({candidate2:0,.0f})')
+print(f'{unique_list[2]}: {(candidate3/voter_count) * 100:0,.03f}% ({candidate3:0,.0f})')
+print(f'{unique_list[3]}: {(candidate4/voter_count) * 100:0,.03f}% ({candidate4:0,.0f})')
+print("--------------------------------")
