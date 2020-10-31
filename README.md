@@ -36,7 +36,7 @@ My first assignment creating scripts in Python. I used class materials and outsi
 
 *PyPoll*
 
-1. I was having a hard time figuring out how to get a complete list of candidates, so I attended another office hour and asked for some tips to get started. Instructor showed me that I need to declare a list at the beginning and then fill up that list with candidates data from the csv. He was also explaining to another student who asked for help, and gave us a mini lesson on how to get the count for the candidates. He showed us the key and value function, which I used later on in the assignment.
+1. I was having a hard time figuring out how to get a complete list of candidates, so I attended another office hour and asked for some tips to get started. Instructor showed me that I need to declare a list at the beginning and then fill up that list with candidates data from the csv. He was also explaining to another student who asked for help, and gave us a mini lesson on how to get the count for the candidates. He showed us the keys and values function, which I used later on in the assignment.
 2. I used these websites (https://www.geeksforgeeks.org/python-get-unique-values-list/) (https://www.freecodecamp.org/news/python-unique-list-how-to-get-all-the-unique-values-in-a-list-or-array/)(https://www.geeksforgeeks.org/python-return-statement/) as references to set up the unique function for finding the a list of candidates.
 3. I used this website (https://www.guru99.com/python-list-count.html) as reference for using the count function to find each candidate's vote count.
 4. I used this webiste (https://howtodoinjava.com/python/examples/max-min/) as reference for using the max function to find the maximum vote count.
