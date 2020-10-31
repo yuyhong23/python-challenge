@@ -15,6 +15,8 @@ candidate1 = 0
 candidate2 = 0
 candidate3 = 0
 candidate4 = 0
+candidateNcount= {}
+winner_count = 0
 
 # Function for getting each candidate's name without repeating
 def unique(candidate_list):
@@ -54,10 +56,19 @@ candidate2 = all_candidates.count(unique_list[1])
 candidate3 = all_candidates.count(unique_list[2])
 candidate4 = all_candidates.count(unique_list[3])
 
+# Put the candidate name and the according vote count into a list for identifying the most vote
+candidateNcount = {unique_list[0]: candidate1,
+        unique_list[1]: candidate2,
+        unique_list[2]: candidate3,
+        unique_list[3]: candidate4}
+
+# Identifying the most vote
+winner_count = max(candidateNcount.values())
+
 # Printing the results
 print("Election Results")
 print("--------------------------------")
-print(f'Total Votes: {voter_count:0,.0f}')# the :0,.0f is for converting the number to a easier read
+print(f'Total Votes: {voter_count:0,.0f}')# the :0,.0f is for converting the number to a easier read format
 print("--------------------------------")
 # Ran this to see how many unqiue candidates in the data
     # print(unique(all_candidates))
@@ -65,4 +76,7 @@ print(f'{unique_list[0]}: {(candidate1/voter_count) * 100:0,.03f}% ({candidate1:
 print(f'{unique_list[1]}: {(candidate2/voter_count) * 100:0,.03f}% ({candidate2:0,.0f})')
 print(f'{unique_list[2]}: {(candidate3/voter_count) * 100:0,.03f}% ({candidate3:0,.0f})')
 print(f'{unique_list[3]}: {(candidate4/voter_count) * 100:0,.03f}% ({candidate4:0,.0f})')
+print("--------------------------------")
+# Get the winner name based on the highest vote count
+print(f'Winner: {list(candidateNcount.keys())[list(candidateNcount.values()).index(winner_count)]}')
 print("--------------------------------")
