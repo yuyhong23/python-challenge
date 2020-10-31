@@ -48,10 +48,10 @@ with open(vote_count_csv, 'r') as csvfile:
 unique_list = unique(all_candidates)
 
 # Get the count each candidate received
-candidate1 = all_candidates.count(unique_list[0])
-candidate2 = all_candidates.count(unique_list[1])
-candidate3 = all_candidates.count(unique_list[2])
-candidate4 = all_candidates.count(unique_list[3])
+candidate1 = (all_candidates.count(unique_list[0])/voter_count) * 100
+candidate2 = (all_candidates.count(unique_list[1])/voter_count) * 100
+candidate3 = (all_candidates.count(unique_list[2])/voter_count) * 100
+candidate4 = (all_candidates.count(unique_list[3])/voter_count) * 100
 
 print("Election Results")
 print("--------------------------------")
