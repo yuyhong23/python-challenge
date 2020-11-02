@@ -4,7 +4,7 @@ Data and instruction provided by UC Berkeley Extension Data Analytics Bootcamp.
 
 ## Introduction
 
-The goal of this assignment is to use Python concepts and newly developed Python scripting skills in real-world situations. There two parts to this assignment: PyBank and PyPoll.
+The goal of this assignment is to use Python concepts and newly developed Python scripting skills in real-world situations. There are two parts to this assignment: PyBank and PyPoll.
 
 ## Technologies
 
