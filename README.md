@@ -35,7 +35,11 @@ The goal of this assignment is to use Python concepts and newly developed Python
 
 ### Files
 
-PyBank and PyPoll folders each contains a python file, where the scripts are located in the form of a python file, a folder called Resources, where the data file is located, and a folder called analysis, where the analyzing result is located in the form of a text file. 
+PyBank and PyPoll folders each contains:
+
+- a python file, where the scripts are located in the form of a python file
+- a folder called analysis, where the analyzing result is located in the form of a text file
+- a folder called Resources, where the data file is located
 
 ## Process and Credits
 
