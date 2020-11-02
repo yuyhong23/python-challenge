@@ -1,8 +1,17 @@
-# python-challenge
+# Python Challenge
 
 Data and instruction provided by UC Berkeley Extension Data Analytics Bootcamp.
 
-Two Python Challenges: PyBank and PyPoll.
+## Introduction
+
+The goal of this assignment is to use Python concepts and newly developed Python scripting skills in real-world situations. There two parts to this assignment: PyBank and PyPoll.
+
+### Technologies
+
+- Python 3
+- VS Code
+
+#### Detailed Instructions
 
 *PyBank Instruction:*
 
@@ -24,7 +33,7 @@ Two Python Challenges: PyBank and PyPoll.
         - The winner of the election based on popular vote.
         - In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-**Process and Credits**
+##### Process and Credits
 
 My first assignment creating scripts in Python. I used class materials and outside resources for references, asked Bootcamp's Learning Assistant App for help and attended instruction's office hour to complete this assignment.
 
@@ -42,3 +51,4 @@ My first assignment creating scripts in Python. I used class materials and outsi
 4. I used this webiste (https://howtodoinjava.com/python/examples/max-min/) as reference for using the max function to find the maximum vote count.
 5. I used this website (https://stackoverflow.com/questions/8023306/get-key-by-value-in-dictionary/8023329) as reference to identifying the name of the candidate with the maximum vote count in a dictionary (this is how I used it in my scripts: print(f'Winner: {list(candidateNcount.keys())[list(candidateNcount.values()).index(winner_count)]}')).
 
+- Looked at Central Grader's feedback from last assignment and used this website (https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project) as reference to improve this readme. 
