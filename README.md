@@ -21,7 +21,7 @@ The goal of this assignment is to use Python concepts and newly developed Python
         - The average of the changes in "Profit/Losses" over the entire period
         - The greatest increase in profits (date and amount) over the entire period
         - The greatest decrease in losses (date and amount) over the entire period
-        - In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+        - In addition, your final script should both print the analysis to the terminal and export a text file with the results
 
 *PyPoll Instruction:*
 
@@ -30,10 +30,14 @@ The goal of this assignment is to use Python concepts and newly developed Python
         - A complete list of candidates who received votes
         - The percentage of votes each candidate won
         - The total number of votes each candidate won
-        - The winner of the election based on popular vote.
-        - In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+        - The winner of the election based on popular vote
+        - In addition, your final script should both print the analysis to the terminal and export a text file with the results
 
-### Process and Credits
+### Files
+
+PyBank and PyPoll folders each contains a python file, where the scripts are located in the form of a python file, a folder called Resources, where the data file is located, and a folder called analysis, where the analyzing result is located in the form of a text file. 
+
+## Process and Credits
 
 My first assignment creating scripts in Python. I used class materials and outside resources for references, asked Bootcamp's Learning Assistant App for help and attended instruction's office hour to complete this assignment.
 
