@@ -6,12 +6,12 @@ Data and instruction provided by UC Berkeley Extension Data Analytics Bootcamp.
 
 The goal of this assignment is to use Python concepts and newly developed Python scripting skills in real-world situations. There two parts to this assignment: PyBank and PyPoll.
 
-### Technologies
+## Technologies
 
 - Python 3
 - VS Code
 
-#### Detailed Instructions
+## Detailed Instructions
 
 *PyBank Instruction:*
 
@@ -33,7 +33,7 @@ The goal of this assignment is to use Python concepts and newly developed Python
         - The winner of the election based on popular vote.
         - In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-##### Process and Credits
+### Process and Credits
 
 My first assignment creating scripts in Python. I used class materials and outside resources for references, asked Bootcamp's Learning Assistant App for help and attended instruction's office hour to complete this assignment.
 
